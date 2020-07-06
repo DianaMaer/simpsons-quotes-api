@@ -1,8 +1,13 @@
 import React from 'react';
 
-const QuoteCard = () => {
+const QuoteCard = ({ character, image, quote }) => {
     return(
-        <div>Test Card</div>
+        <div>
+            <p>{character}</p>
+            <img src={image} alt={character} />
+            <p>{quote}</p>
+        </div>
+        
     )
 }
 
