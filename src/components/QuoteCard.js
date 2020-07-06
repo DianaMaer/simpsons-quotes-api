@@ -5,7 +5,7 @@ const QuoteCard = ({ character, image, quote }) => {
         <div>
             <p>{character}</p>
             <img src={image} alt={character} />
-            <p>{quote}</p>
+            <p>"{quote}"</p>
         </div>
         
     )

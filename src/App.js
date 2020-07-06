@@ -19,7 +19,7 @@ class App extends Component {
       .then(response => response.data)
         .then(data => {
           console.log(data);
-          this.setState = ({
+          this.setState({
             character: data[0].character,
             image: data[0].image,
             quote: data[0].quote,
@@ -30,7 +30,7 @@ class App extends Component {
     //const { qoute, image, character } = this.state
     return (
       <div className="App">
-        <h4>Simpsons' Qoutes</h4>
+        <h5>Simpsons' Qoutes</h5>
         <QouteCard quote={this.state.quote} image={this.state.image} character={this.state.character} />
         <button type="button" onClick={this.getQuote}>Change quote </button>
       </div>
